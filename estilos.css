@@ -6,9 +6,9 @@
 
 }
 body{
-    background-image: url(2.jpg);
+    background: linear-gradient(rgba(1, 31, 255, 0.419), rgba(152, 118, 247, 0.476)), url(2.jpg);
     background-size: cover;
-    background-color: rgba(0, 255, 255, 0.904);
+
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
@@ -36,7 +36,7 @@ main{
     display: flex;
     justify-content: center;
     backdrop-filter:blur(.5px);
-    background-color:rgba(0, 217, 255, 0.606);
+    background-color:rgba(38, 0, 255, 0.815);
 }
 .caja__trasera div{ 
     margin: 100px 40px;
@@ -56,11 +56,64 @@ main{
 }
 .caja__trasera button{
     padding: 10px 40px;
-    border: 2px solid floralwhite;
+    border: 2px solid rgb(245, 245, 245);
     background: transparent;
     font-size: 15px;
     font-weight: 600;
     cursor: pointer;
     color:white;
     outline: none;
+}
+.contenedor_login--register{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 380px;
+    position: relative;
+    top: -185px ;
+    left: 10px;
+}
+
+.contenedor_login--register form{
+ width: 100%;
+ padding: 45px 20px;
+ background: floralwhite;
+ position: absolute;
+ border-radius: 20px;
+
+}
+
+.contenedor_login--register form h2{
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: rgba(17, 0, 255, 0.676);
+}
+.contenedor_login--register form input{
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    border: none;
+    background: #f2f2f2;
+    font-size: 16px;
+    outline: none;
+
+}
+.contenedor_login--register form button{
+    padding: 10px 40px;
+    margin-top: 40px;
+    border: none;
+    font-size: 14px;
+    background-color: #46a2fd;
+    color: white;
+    cursor: pointer;
+    outline:none;
+}
+
+.formulario__login{
+    opacity: 1;
+    display: block;
+}
+.formulario__register{
+    display: block;
 }
