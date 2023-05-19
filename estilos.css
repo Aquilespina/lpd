@@ -115,7 +115,7 @@ main{
     display: block;
 }
 .formulario__register{
-    display: none;
+    display: block;
 }
 /*Trabajando en el responsive Design*/
 
