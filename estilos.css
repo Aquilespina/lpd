@@ -70,7 +70,7 @@ main{
     width: 100%;
     max-width: 380px;
     position: relative;
-    top: -185px ;
+    top: -205px ;
     left: 10px;
 }
 
@@ -115,5 +115,27 @@ main{
     display: block;
 }
 .formulario__register{
-    display: block;
+    display: none;
+}
+/*Trabajando en el responsive Design*/
+
+@media screen and (max-width:850px){
+    main{
+        margin-top: 50px;
+    }
+    .caja__trasera{
+        max-width: 350px;
+        height: 300px;
+        flex-direction: row;
+        margin: auto;
+    }
+    .caja__trasera div{
+        margin: 0px;
+        position: absolute;
+    }
+    /*Formulario*/
+    .contenedor_login--register{
+        top: -10px;
+        left: -5px;
+    }
 }
