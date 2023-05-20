@@ -72,6 +72,7 @@ main{
     position: relative;
     top: -205px ;
     left: 10px;
+    transition: left 500ms cubic-bezier(0.075,0.785,0.310,0.795);
 }
 
 .contenedor_login--register form{
@@ -115,7 +116,7 @@ main{
     display: block;
 }
 .formulario__register{
-    display: block;
+    display: none;
 }
 /*Trabajando en el responsive Design*/
 
@@ -137,5 +138,9 @@ main{
     .contenedor_login--register{
         top: -10px;
         left: -5px;
+    }
+
+    .contenedor_login--register form{
+        position: relative;
     }
 }
