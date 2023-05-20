@@ -5,16 +5,48 @@
     font-family: sans-serif;
 
 }
-body{
-    background: linear-gradient(rgba(1, 31, 255, 0.419), rgba(152, 118, 247, 0.476)), url(2.jpg);
-    background-size: cover;
-
+ body {
+    background: linear-gradient(rgba(1, 31, 255, 0.419), rgba(152, 118, 247, 0.476)), url(img/6.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
-    
+    border-radius: 10px;
 
+    animation: animate 15s infinite;
+}
 
+@keyframes animate{
+    20%{
+        background: linear-gradient(rgba(1, 31, 255, 0.419), rgba(152, 118, 247, 0.476)),  url(img/5.jpg);
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        
+    }
+    40%{
+        background: linear-gradient(rgba(1, 31, 255, 0.419), rgba(152, 118, 247, 0.476)), url(img/4.jpg);
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+    }
+    60%{
+        background: linear-gradient(rgba(1, 31, 255, 0.419), hsla(256, 89%, 72%, 0.476)),  url(img/3.jpg);
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+    }
+    80%{
+        background: linear-gradient(rgba(1, 31, 255, 0.419), rgba(152, 118, 247, 0.476)), url(img/2.jpg);
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+    }
+    100%{
+        background: linear-gradient(rgba(1, 31, 255, 0.419), rgba(152, 118, 247, 0.476)), url(img/6.jpg);
+        background-size: cover;  
+        background-position: center;
+        background-attachment: fixed;
+    }
 }
 main{
     width: 100%;
