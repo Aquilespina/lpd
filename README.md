@@ -1,4 +1,4 @@
-# Proyecto Orale
+# Proyecto LPD
 El siguiente proyecto tiene como objetivo agilizar los procesos de asociacion 
 de acuerdo a las diversas areas que tiene la asociacion civil Vinculos y Redes AC
 en donde cuentas con varias areas, una de ellas es el laboratorio de participacion digital 
