@@ -12,7 +12,7 @@
     background-attachment: fixed;
     border-radius: 10px;
 
-    animation: animate 15s infinite;
+    animation: animate 95s infinite;
 }
 
 @keyframes animate{
