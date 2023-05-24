@@ -13,4 +13,5 @@ de capacitaciones gratitutas en torno a 4 areas en especifico las cuales son
  
  - Marketing
 
-Dentro del 
+Dentro de estas areas de especilizacion, cuenta con talleres para cualquier persona externa al programa Orale que desee mejorar en sus habilidades digitales 
+
