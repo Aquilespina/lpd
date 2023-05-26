@@ -1,3 +1,14 @@
+function redirectToPage(page) {
+    window.location.href = page;
+    
+
+    }
+
+
+
+
+
+
 document.getElementById("btn__iniciar--sesion").addEventListener("click",iniciarSesion);
 document.getElementById("btn__registrarse").addEventListener("click",register);
 window.addEventListener("resize",anchopagina);
