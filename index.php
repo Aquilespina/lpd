@@ -1,10 +1,5 @@
 <?php
 
-session_start(); //inicia la sesion
-if(isset($_SESSION['usuario'])){
-    header('Location: menu/iniciarsesion.php');
-
-}   
 
 ?>
 

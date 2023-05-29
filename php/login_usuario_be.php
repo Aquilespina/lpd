@@ -10,9 +10,8 @@ $validar_login = mysqli_query($conexion,"SELECT * FROM usuarios WHERE correo='$c
 and contrasena='$contrasena'");
 if(mysqli_num_rows($validar_login) > 0){
     $_SESSION['usuario'] = $correo;
-
-
-    header("location: ../menu/iniciarsesion.php");
+    
+    header("location: ../menu/iniciarsesion.php ");
     exit;
 }
 else{
