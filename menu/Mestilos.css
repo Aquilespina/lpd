@@ -1,59 +1,76 @@
 
-body{
-  background-color: #313131;
-}
-.navegacion{
- width: 100px;
- margin-top: 30px auto;
- background: #fff; 
-
-}
-.navegacion ul{
-  list-style: none;
-}
-
-.menu>li{
- 
- /* position: relative;*/
-  display: inline-block;
-  background: #fff;
-}
-
-* {
+nav ul {
+  list-style-type: none;
   margin: 0;
   padding: 0;
+}
 
-  box-sizing: border-box;
-  font-family: sans-serif;
+nav ul li {
+  display: inline-block;
+  position: relative;
+}
+
+nav ul li a {
+  display: block;
+  padding: 10px 20px;
   text-decoration: none;
-  list-style: none;
+  color: #333;
 }
 
-header{
-  width: 100%;
-  position: fixed;
-top: 0;
-left: 0;
-background: #fff;
-
-}
-/*header superior*/
-.header_superior{
-max-width: 1200px;
-margin: auto;
-display: flex;
-align-items: center;
-justify-content: space-between;
-padding: 20px;
+nav ul li:hover > a {
+  background-color: #f2f2f2;
 }
 
-.search input {
-  width: 350px;
-  padding: 10px;
+nav ul ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
   border: 1px solid #ccc;
-  border-radius: 5px;
-  font-size: 16px;
-  outline: none;
 }
 
- 
+nav ul li:hover > ul {
+  display: inherit;
+}
+
+nav ul ul li {
+  width: 200px;
+  float: none;
+  display: list-item;
+  position: relative;
+}
+
+nav ul ul ul li {
+  position: relative;
+  top: -60px;
+  left: 200px;
+}
+
+nav ul li:hover > a:after {
+  content: ' ▲';
+}
+
+nav ul ul li:hover > a:after {
+  content: ' ▲';
+}
+
+nav a {
+  color: #333;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #fff;
+  background-color: #333;
+}
+
+.titulo-bienvenida{
+  font-size: 15px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  color: #333;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
