@@ -1,5 +1,23 @@
 
+body{
+  background-color: #313131;
+}
+.navegacion{
+ width: 100px;
+ margin-top: 30px auto;
+ background: #fff; 
 
+}
+.navegacion ul{
+  list-style: none;
+}
+
+.menu>li{
+ 
+ /* position: relative;*/
+  display: inline-block;
+  background: #fff;
+}
 
 * {
   margin: 0;
