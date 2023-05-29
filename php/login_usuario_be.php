@@ -22,7 +22,7 @@ else{
     window.location = "../index.php";
     </script>
     ';
-    exit();
+    exit;
 }
 
 

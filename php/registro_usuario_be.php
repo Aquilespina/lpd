@@ -16,7 +16,7 @@ $query = "INSERT INTO usuarios(nombre_completo,correo,usuario,contrasena)
         <script>   
         alert("Este correo ya esta registrado, intenta con otro diferente");
         window.location = "../index.php";
-        </script>
+        </script>           
         ';
         exit();
     }
