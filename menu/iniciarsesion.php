@@ -19,7 +19,7 @@
           <li><a href="#">Talleres LPD</a>
             <ul class="submenu">
               <li><a href="ingr.html">Ingreso</a></li>
-              <li><a href="#">Egreso</a></li>
+              <li><a href="egre.php">Egreso</a></li>
             </ul>
           </li>
           <li><a href="#">Aliados</a></li>
