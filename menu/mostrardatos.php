@@ -5,6 +5,13 @@
    include '../php/conexion_be.php';  //incluye el archivo de conexion	
 
   
+   if(isset($_POST["Buscar"])){
+
+    $valor = $_POST["valor"];
+
+
+
+   
    //Verifica la conexion
    
    // Consulta SQL para obtener los datos de la base de datos
@@ -40,6 +47,8 @@
    
    // Cerrar la conexión a la base de datos
      exit;
+
+    }
        ?>
 
 
