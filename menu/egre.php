@@ -21,12 +21,9 @@
     </style>
 </head>
 <body>
-    <h1>Mostrar datos al hacer clic</h1> 
-    <form method="POST" action="">
-        <label for="valor">Ingrese un valor:</label>
-        <input type="text" id="valor" name="valor">
-        <button type="submit" name="buscar">Buscar</button>
-    </form>
+    <h1>Mostrar datos al hacer clic</h1>
+    <button id="btnMostrar">Mostrar datos</button>
+    <div id="tablaDatos"></div>
 
     <script>
         $(document).ready(function() {
