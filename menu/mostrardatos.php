@@ -12,7 +12,7 @@
 
    if($conexion){
 
-       $sql = "SELECT nombre_completo, correo, usuario FROM usuarios";
+       $sql = "SELECT nombre, correo, usuario FROM usuarios";
        $result = $conexion->query($sql);
        $num_rows = mysqli_num_rows($result);
 
@@ -28,7 +28,7 @@
        echo "<tr><th>Nombre completo </th><th>Correo</th><th>Usuario</th></tr>";
        while ($row = $result->fetch_assoc()) {
            echo "<tr>";
-           echo "<td>".$row["nombre_completo"]."</td>";
+           echo "<td>".$row["nombre"]."</td>";
            echo "<td>".$row["correo"]."</td>";
            echo "<td>".$row["usuario"]."</td>";
            echo "</tr>";

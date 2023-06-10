@@ -1,71 +1,33 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Registro de Información Personal</title>
-  <style>
-    .form-container {
-      max-width: 400px;
-      margin: 0 auto;
-      padding: 20px;
-      border: 1px solid #ccc;
-    }
-    
-    .form-container input[type="text"], 
-    .form-container input[type="email"] {
-      width: 100%;
-      padding: 10px;
-      margin-bottom: 10px;
-    }
-    
-    .form-container button {
-      width: 100%;
-      padding: 10px;
-      background-color: #4CAF50;
-      color: white;
-      border: none;
-      cursor: pointer;
-    }
-    
-    .form-container button:hover {
-      background-color: #45a049;
-    }
-  </style>
+  <title>Registro de Informacion Jovenes</title>
+<link rel="stylesheet" href="cssingr/ingr.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="js/ingr.js"></script>
+
 </head>
 <body>
   <div class="form-container">
-    <h2>Registro de Información Personal</h2>
-    <form id="personal-info-form">
+
+    <form  action="ingr.php" method="POST" class="personal-info-form">
+      <h2>Registro de jovenes </h2>
       <label for="nombre">Nombre:</label>
-      <input type="text" id="nombre" required>
+      <input type="text"  name="Nombre" required>
       
-      <label for="apellido">Apellido:</label>
-      <input type="text" id="apellido" required>
-      
+      <label for="apellido"> Primer Apellido:</label>
+      <input type="text" name="primer_ap" required>
+      <label for="apellido"> Segundo  Apellido:</label>
+      <input type="text" name="segundo_ap" required>
+      <label for="text">Celular:</label>
+      <input type="text" name="celular" required>
       <label for="email">Email:</label>
-      <input type="email" id="email" required>
+      <input type="email" name="correo" required>
+
       
-      <button type="submit">Registrar</button>
+      <button >Registrar</button>
     
     </form>
   </div>
-
-  <script>
-    document.getElementById("personal-info-form").addEventListener("submit", function(event) {
-      event.preventDefault(); // Evita que la página se recargue al enviar el formulario
-      
-      // Obtener los valores ingresados por el usuario
-      var nombre = document.getElementById("nombre").value;
-      var apellido = document.getElementById("apellido").value;
-      var email = document.getElementById("email").value;
-      
-      // Realizar cualquier acción adicional que desees con los datos ingresados
-      
-      // Ejemplo: Mostrar una alerta con los datos ingresados
-      alert("Datos registrados:\n\nNombre: " + nombre + "\nApellido: " + apellido + "\nEmail: " + email);
-      
-      // Restablecer el formulario
-      document.getElementById("personal-info-form").reset();
-    });
-  </script>
 </body>
 </html>

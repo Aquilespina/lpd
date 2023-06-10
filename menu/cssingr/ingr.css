@@ -1,0 +1,49 @@
+
+
+/* CSS for the ingredients page */
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+
+}
+.form-container {
+  
+    margin: 0 auto;  
+    max-width: 400px;
+    padding: 20px;
+    border-width: 0cap;
+  }
+  
+ .form-container  {
+  display: flex;/*Alineacion de elementos horizontales*/
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+ }
+ .from-container{
+  text-align: center;
+ }
+  
+  .form-container input[type="text"], 
+  .form-container input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .form-container button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .form-container button:hover {
+    background-color: #45a049;
+  }
