@@ -7,7 +7,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Oswald:wght@300;400;500&family=Prompt&family=Roboto+Condensed&display=swap" rel="stylesheet">
+
 
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -22,23 +22,23 @@
     <nav>
       
         <ul>
-          <li><a href="#">Taller Orale</a>
+          <li><a href="#">Formación Orale</a>
           <ul class="submenuorale">
             <li>
-              <a href="ingr.html">Ingreso a Orale</a>
+              <a href="ingr.html">Registro a Orale</a>
             </li>
           </ul>
          </li>
-          <li><a href="#">Talleres LPD</a>
+          <li><a href="#">Formacion LPD</a>
             <ul class="submenu">
-              <li><a href="funcionid.php">Incripcion a LPD</a></li>
+              <li><a href="funcionid.html">Registro a LPD</a></li>
             </ul>
           </li>
         </ul>
         <div class="titulo-bienvenida">
           <div class="margen">
-          <h1>Bienvenida Coordinación   </h1>
-          <h1>Laboratorio de participación Digital </h1>
+          <h1>Coordinación  laboratorio de </h1>
+          <h1> Participación Digital </h1>
           </div>
         </div>
       </nav>

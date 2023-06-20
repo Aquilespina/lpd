@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+ <title>Registro a LPD</title>
+
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   
+     
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Egresados de LPD</title>
+</head>
+<body>
+    <div class="contaider">
+        <form action="id.php" method="post">
+        <h2>Buscar al Joven por Nombre</h2>
+            <input type="text" name="nombre" placeholder="Nombre de joven">
+            <button onclick="buscarnombre()" id="result">Buscar</button>
+            
+    </div>
+     <script>
+        function buscarnombre(){
+    var nombre= document.getElementById(nombre).value;//obtiene el valor del id
+   
+    $.ajax({//ajax para enviar el id a id.php
+       
+        url:"id.php",//pagina a la que se envia la peticion
+        method:"GEt",//forma en que se envia la peticion
+        data:{data: nombre},//datos a enviar
+        success:function(data){//funcion que se ejecuta cuando se recibe una respuesta
+            $('#result').html(data);//escribe la respuesta en el div result
+        }
+    }
+    );}
+
+      
+
+        
+    </script>
+<style> 
+body{
+    background-color: #ffefe4;
+background-image: url("data:image/svg+xml,%3Csvg width='32' height='64' viewBox='0 0 32 64' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 28h20V16h-4v8H4V4h28v28h-4V8H8v12h4v-8h12v20H0v-4zm12 8h20v4H16v24H0v-4h12V36zm16 12h-4v12h8v4H20V44h12v12h-4v-8zM0 36h8v20H0v-4h4V40H0v-4z' fill='%239bc9fc' fill-opacity='0.12' fill-rule='evenodd'/%3E%3C/svg%3E");
+}
+.contaider{
+    width: 400px;
+    height: 400px;
+
+    margin: 0 auto;
+    margin-top: 100px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #000;
+
+}
+
+
+h2{
+    text-align: center;
+    margin-bottom: 20px;
+    color: #000;
+}
+input{
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+button{
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+button:hover{
+    cursor: pointer;
+}
+
+
+</style>
+    
+   
+</body>
+</html>
